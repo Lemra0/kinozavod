@@ -1,0 +1,22 @@
+.masked {
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  cursor: help;
+}
+.spoiler {
+  display: inline;
+  padding: 1px 8px;
+  background: repeating-linear-gradient(-45deg, var(--border) 0 4px, transparent 4px 8px);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.spoiler:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+.spoilerOpen {
+  background: color-mix(in srgb, var(--warning) 12%, transparent);
+}

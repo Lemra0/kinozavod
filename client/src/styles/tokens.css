@@ -1,0 +1,75 @@
+/* Design tokens — "Industrial noir" style guide. */
+:root {
+  /* Palette */
+  --color-mazut: #1b1a17;
+  --color-beton: #2a2825;
+  --color-beton-2: #34322e;
+  --color-stal: #4a4740;
+  --color-izvest: #e6e0d3;
+  --color-pyl: #9a9384;
+  --color-rust: #cf6430;
+  --color-rust-hover: #e0743d;
+  --color-patina: #5a9a8b;
+  --color-signal: #d9a520;
+  --color-brass: #b39352;
+
+  /* Roles (dark theme — default) */
+  --bg: var(--color-mazut);
+  --surface: var(--color-beton);
+  --surface-2: var(--color-beton-2);
+  --border: var(--color-stal);
+  --text: var(--color-izvest);
+  --text-muted: var(--color-pyl);
+  --accent: var(--color-rust);
+  --accent-hover: var(--color-rust-hover);
+  --on-accent: var(--color-mazut);
+  --success: var(--color-patina);
+  --warning: var(--color-signal);
+  --premium: var(--color-brass);
+
+  /* Fonts */
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --font-stencil: 'Big Shoulders Stencil Display', 'Big Shoulders Stencil', 'Oswald', sans-serif;
+
+  /* Sizes */
+  --radius: 0;
+  --border-width: 2px;
+  --control-height: 44px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 40px;
+  --space-7: 64px;
+  --content-width: 1180px;
+
+  /* Signal stripe */
+  --hazard: repeating-linear-gradient(
+    -45deg,
+    var(--color-signal) 0 10px,
+    var(--color-mazut) 10px 20px
+  );
+
+  color-scheme: dark;
+}
+
+/* Light theme — "day shift" */
+:root[data-theme='light'] {
+  --bg: #e9e5dc;
+  --surface: #f3f0ea;
+  --surface-2: #ddd8cc;
+  --border: #bdb6a6;
+  --text: #1f1d19;
+  --text-muted: #5e594e;
+  --accent: #a3461c;
+  --accent-hover: #8c3a16;
+  --on-accent: #fbf8f2;
+  --success: #2f6b5e;
+  --warning: #8a6a0a;
+  --premium: #7d6427;
+
+  color-scheme: light;
+}

@@ -1,0 +1,13 @@
+.banner {
+  background: var(--hazard);
+  padding: 4px 0;
+  text-align: center;
+}
+
+.text {
+  display: inline-block;
+  background: var(--color-mazut);
+  color: var(--color-izvest);
+  font-size: 13px;
+  padding: 1px 10px;
+}

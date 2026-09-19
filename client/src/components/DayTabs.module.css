@@ -1,0 +1,35 @@
+.tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  border-bottom: 2px solid var(--border);
+}
+
+.tab {
+  flex: none;
+  min-height: var(--control-height);
+  padding: 8px 16px;
+  background: transparent;
+  border: 0;
+  border-bottom: 4px solid transparent;
+  margin-bottom: -2px;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 17px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab:first-letter {
+  text-transform: uppercase;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tab[aria-pressed='true'] {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}

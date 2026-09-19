@@ -1,0 +1,18 @@
+.badge {
+  display: inline-block;
+  flex: none;
+  padding: 0 6px;
+  border: 2px solid var(--warning);
+  color: var(--warning);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  transform: rotate(-4deg);
+  white-space: nowrap;
+}
+
+.unknown {
+  border-color: var(--border);
+  color: var(--text-muted);
+}

@@ -1,0 +1,87 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  background: rgb(0 0 0 / 0.72);
+}
+
+.dialog {
+  width: 100%;
+  max-width: 560px;
+  background: var(--surface);
+  border: var(--border-width) solid var(--border);
+  padding: calc(var(--space-5) + 14px) var(--space-5) var(--space-5);
+  position: relative;
+}
+
+.dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: var(--hazard);
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: var(--space-5);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  background: var(--bg);
+  border: var(--border-width) solid var(--border);
+  cursor: pointer;
+  font-size: 17px;
+  text-align: left;
+}
+
+.option:hover {
+  border-color: var(--accent);
+}
+
+.code {
+  font-family: var(--font-stencil);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .code {
+    font-size: 28px;
+    min-width: 44px;
+  }
+}
+
+.text {
+  margin: var(--space-4) 0 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}

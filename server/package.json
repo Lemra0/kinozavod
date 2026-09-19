@@ -1,0 +1,32 @@
+{
+  "name": "@kinozavod/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch-path=src --watch-path=../shared/src src/index.js",
+    "start": "node src/index.js",
+    "migrate": "node src/db/migrate-cli.js",
+    "db:reset": "node src/db/reset-cli.js",
+    "test": "vitest run",
+    "seed": "node src/db/seed-cli.js",
+    "demo:reset": "node src/db/demo-reset-cli.js"
+  },
+  "dependencies": {
+    "@kinozavod/shared": "*",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.11.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.0.0",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.4",
+    "socket.io": "^4.8.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2",
+    "vitest": "^5.0.1"
+  }
+}

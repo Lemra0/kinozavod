@@ -1,0 +1,143 @@
+.wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: var(--space-5) var(--space-4);
+}
+
+.screen {
+  max-width: 520px;
+  margin: 0 auto var(--space-5);
+}
+
+.screenCurve {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+
+.screenLabel {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.mapScroll {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  height: auto;
+  width: 100%;
+}
+
+.seat .seatBox {
+  fill: transparent;
+  stroke: var(--border);
+  stroke-width: 2;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.free.clickable:hover .seatBox {
+  stroke: var(--text-muted);
+}
+
+.vip .seatBox {
+  stroke: var(--premium);
+}
+
+.selected .seatBox {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.held .seatBox {
+  fill: var(--border);
+  stroke: var(--border);
+  /* hatched to be distinct from sold without relying on colour */
+}
+
+.held {
+  cursor: not-allowed;
+}
+
+.sold .seatBox {
+  fill: var(--border);
+  stroke: var(--border);
+}
+
+.sold {
+  cursor: not-allowed;
+}
+
+.cross {
+  stroke: var(--bg);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.sofaMark {
+  text-anchor: middle;
+  font-size: 13px;
+  fill: var(--premium);
+}
+
+.selected .sofaMark {
+  fill: var(--on-accent);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2) var(--space-4);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip {
+  width: 22px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid var(--border);
+  display: inline-block;
+}
+
+.chip.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.chip.held {
+  background: repeating-linear-gradient(-45deg, var(--border) 0 3px, transparent 3px 6px);
+}
+
+.chip.sold {
+  background: var(--border);
+}
+
+.chip.vip {
+  border-color: var(--premium);
+  background: transparent;
+}
+
+.chip.sofa {
+  border-color: var(--premium);
+  width: 34px;
+}

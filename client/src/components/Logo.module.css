@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  padding: var(--space-1) 0;
+}
+
+.logo:hover {
+  color: var(--text);
+}
+
+.word {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  border-bottom: 4px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+@media (max-width: 420px) {
+  .word {
+    font-size: 21px;
+  }
+}

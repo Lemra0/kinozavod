@@ -1,0 +1,77 @@
+.timer {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.leader {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid var(--text-muted);
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 18px;
+}
+
+.leader::before,
+.leader::after {
+  content: '';
+  position: absolute;
+  background: var(--text-muted);
+}
+
+.leader::before {
+  left: 50%;
+  top: -5px;
+  bottom: -5px;
+  width: 1px;
+}
+
+.leader::after {
+  top: 50%;
+  left: -5px;
+  right: -5px;
+  height: 1px;
+}
+
+.leader b {
+  position: relative;
+  z-index: 1;
+  background: var(--surface);
+  padding: 0 3px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.clock {
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
+.note {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.warn {
+  border-color: var(--warning);
+}
+
+.warn .leader {
+  border-color: var(--warning);
+}
+
+.warn .leader::before,
+.warn .leader::after {
+  background: var(--warning);
+}

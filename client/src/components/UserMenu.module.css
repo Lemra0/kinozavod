@@ -1,0 +1,90 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.signIn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 16px;
+  border: 1px solid var(--border);
+}
+
+.signIn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.account {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.nick {
+  font-family: var(--font-display);
+  font-size: 15px;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logout {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.placeholder {
+  width: 34px;
+  height: 34px;
+}
+
+@media (max-width: 760px) {
+  .nick {
+    display: none;
+  }
+}
+
+.staff {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 15px;
+  border: 1px solid var(--accent);
+}
+
+.staff:hover {
+  background: var(--accent);
+  color: var(--on-accent);
+}

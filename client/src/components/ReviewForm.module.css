@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.toolbar {
+  display: flex;
+  gap: var(--space-2);
+}
+.tool {
+  min-height: 34px;
+  padding: 0 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+.tool:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+.textarea {
+  width: 100%;
+  padding: var(--space-3);
+  background: var(--bg);
+  border: 2px solid var(--border);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.preview {
+  padding: var(--space-3);
+  border: 1px dashed var(--border);
+}
+.previewLabel {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.previewBody {
+  margin: var(--space-2) 0 0;
+  white-space: pre-wrap;
+}
+.error {
+  margin: 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 4px solid var(--accent);
+  background: var(--bg);
+}
+.actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}

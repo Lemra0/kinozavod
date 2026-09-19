@@ -1,0 +1,52 @@
+.page {
+  padding-bottom: var(--space-7);
+  max-width: 760px;
+}
+
+.hero {
+  padding: var(--space-6) 0 var(--space-4);
+}
+
+.title {
+  font-size: clamp(36px, 6vw, 64px);
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+}
+
+.lead {
+  font-size: 19px;
+}
+
+.section {
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--border);
+}
+
+.sectionTitle {
+  font-size: 26px;
+  margin-bottom: var(--space-4);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stack li {
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.tmdb {
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  font-size: 15px;
+}

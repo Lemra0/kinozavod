@@ -1,0 +1,30 @@
+.static {
+  font-family: var(--font-display);
+  color: var(--premium);
+  white-space: nowrap;
+}
+.picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+.star {
+  background: none;
+  border: 0;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--border);
+  cursor: pointer;
+  padding: 0 1px;
+}
+.star:hover,
+.on {
+  color: var(--premium);
+}
+.value {
+  margin-left: var(--space-2);
+  font-family: var(--font-display);
+  color: var(--text-muted);
+  min-width: 44px;
+}

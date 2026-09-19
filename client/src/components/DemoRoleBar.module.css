@@ -1,0 +1,36 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  padding: 4px var(--space-4);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.label {
+  color: var(--text-muted);
+}
+.roles {
+  display: inline-flex;
+  gap: 2px;
+}
+.role {
+  min-height: 30px;
+  padding: 0 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 13px;
+  cursor: pointer;
+}
+.role:hover {
+  color: var(--text);
+}
+.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}

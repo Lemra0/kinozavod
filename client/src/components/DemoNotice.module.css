@@ -1,0 +1,11 @@
+.notice {
+  margin: 0 0 var(--space-5);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-left: 4px solid var(--warning);
+  font-size: 15px;
+}
+
+.notice strong {
+  font-weight: 600;
+}
